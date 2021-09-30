@@ -17,10 +17,10 @@ public class service {
         Scanner sc=new Scanner(System.in);
         request_number=sc.nextInt();
         name=sc.next();
-        System.out.println("AMC Dteails Y or N ");
+        System.out.println("AMC Details Y means Yes or N means No ");
         AMC=sc.next();
         service_type=sc.next();
-        System.out.println("enter the date month and year");
+        System.out.println("Enter the date month and year");
         date=sc.nextInt();
         month=sc.nextInt();
         year=sc.nextInt();
@@ -88,6 +88,7 @@ public class service {
         {
             if(ob[i].month==user_month)
             {
+                System.out.println(" Name of the customer full name:"+ob[i].name);
                 
                 count=count+1;
                 System.out.println("Customer serial number: "+count);

@@ -83,12 +83,21 @@ public class service {
         }
         int user_month;
         user_month =sc.nextInt();
+        int count=0;
         for(int i=0;i<n;i++)
         {
             if(ob[i].month==user_month)
             {
                 System.out.println(" Name of the customer full name:"+ob[i].name);
+                
+                count=count+1;
+                System.out.println("Customer serial number: "+count);
                 System.out.println("Request number" +ob[i].request_number);
+                System.out.println(" Name of the customer "+ob[i].name);
+                System.out.println(" Bill amount is : "+ob[i].bill_amount);
+                System.out.println(" Type of service: "+ob[i].service_type);
+                
+          
             }
         }
 

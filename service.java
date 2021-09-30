@@ -17,7 +17,7 @@ public class service {
         Scanner sc=new Scanner(System.in);
         request_number=sc.nextInt();
         name=sc.next();
-        System.out.println("AMC Dteails Y or N ");
+        System.out.println("AMC Details  yes as Y and No as N ");
         AMC=sc.next();
         service_type=sc.next();
         System.out.println("enter the date month and year");

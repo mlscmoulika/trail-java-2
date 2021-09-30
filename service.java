@@ -7,11 +7,10 @@ public class service {
     String AMC;
     String service_type;
     int bill_amount;
-    public class inner_class extends service{
-        int date;
-        int month;
-        int year;
-
+    int date;
+    int month;
+    int year;
+    
         
     public void get()
     {
@@ -61,18 +60,17 @@ public class service {
         System.out.println("Date as follows: "+date+"/"+month+"/"+year);
         System.out.println("Bill Amount in (INR)"+bill_amount);
     }
-    }
     public static void main(String[] args)
     {
         //service ob[]=new service[20];
-        inner_class ob[]=new inner_class[20];
+        inner_class ob[]=new service[20];
         int n;
         System.out.println(" Enter the number of customers: ");
         Scanner sc= new Scanner(System.in);
         n=sc.nextInt();
         for(int i=0;i<n;i++)
         {
-            ob[i]=new inner_class();
+            ob[i]=new service();
             ob[i].get();
         }
         for(int i=0;i<5;i++)
